@@ -1,0 +1,15 @@
+{
+  "name": "civicoop/exactonline",
+  "description": "CiviCRM extension for Exact Online integration",
+  "authors": [
+    {
+      "name": "CiviCooP / Kevin Levie",
+      "homepage": "https://civicoop.org"
+    }
+  ],
+  "license": "AGPL-v3.0",
+  "require": {
+    "php": ">=5.5",
+    "picqer/exact-php-client": "~3.0"
+  }
+}

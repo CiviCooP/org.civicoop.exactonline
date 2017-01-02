@@ -18,7 +18,7 @@
   <compatibility>
     <ver>4.7</ver>
   </compatibility>
-  <comments>CiviCRM extension that provides (some) integration with (Dutch) accounting software [Exact Online](https://www.exact.com). This extension is work in progress and is currently being developed for one specific client!</comments>
+  <comments>This extension provides (some) integration between CiviCRM and (Dutch) accounting software Exact Online. Please read README.md before installing this extension, or the installation will fail!</comments>
   <civix>
     <namespace>CRM/ExactOnline</namespace>
   </civix>

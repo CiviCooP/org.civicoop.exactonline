@@ -114,14 +114,14 @@ function _exactonline_civix_civicrm_upgrade($op, CRM_Queue_Queue $queue = NULL) 
 }
 
 /**
- * @return CRM_Exactonline_Upgrader
+ * @return CRM_ExactOnline_Upgrader
  */
 function _exactonline_civix_upgrader() {
-  if (!file_exists(__DIR__.'/CRM/Exactonline/Upgrader.php')) {
+  if (!file_exists(__DIR__.'/CRM/ExactOnline/Upgrader.php')) {
     return NULL;
   }
   else {
-    return CRM_Exactonline_Upgrader_Base::instance();
+    return CRM_ExactOnline_Upgrader_Base::instance();
   }
 }
 
