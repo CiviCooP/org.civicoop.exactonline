@@ -12,4 +12,16 @@
     <title>Exact Integration Settings</title>
     <access_arguments>administer CiviCRM</access_arguments>
   </item>
+  <item>
+    <path>civicrm/financial/exactonline/oauth</path>
+    <page_callback>CRM_ExactOnline_Page_Oauth</page_callback>
+    <title>Exact Integration Oauth Callback</title>
+    <access_arguments>administer CiviCRM</access_arguments>
+  </item>
+  <item>
+    <path>civicrm/financial/exactonline/test</path>
+    <page_callback>CRM_ExactOnline_Page_Test</page_callback>
+    <title>Exact Integration Test Page</title>
+    <access_arguments>administer CiviCRM</access_arguments>
+  </item>
 </menu>

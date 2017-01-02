@@ -65,7 +65,7 @@ class CRM_ExactOnline_Form_Settings extends CRM_Core_Form {
     }
 
     CRM_Core_Session::setStatus(ts('Exact API Settings Saved'), ts('Exact Integration Settings'), 'success');
-    CRM_Utils_System::redirect(CRM_Utils_System::url('civicrm/financial/exactonline'));
+    CRM_Utils_System::redirect(CRM_Utils_System::url('civicrm/financial/exactonline', ['reset' => 1]));
   }
 
   /**

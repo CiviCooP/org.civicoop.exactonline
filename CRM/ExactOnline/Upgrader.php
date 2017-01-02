@@ -13,8 +13,8 @@ class CRM_ExactOnline_Upgrader extends CRM_ExactOnline_Upgrader_Base {
   public function install() {
 
     // Check if Composer has run to install the Exact API client
-    $basepath = realpath(__DIR__ . '/../../');
-    if(!file_exists($basepath . '/vendor') . !file_exists($basepath . '/vendor/autoload.php')) {
+    $extroot = realpath(__DIR__ . '/../../');
+    if(!file_exists($extroot . '/vendor') || !file_exists($extroot . '/vendor/autoload.php')) {
       throw new CRM_ExactOnline_Exception('Run composer to install the Exact API client before enabling this extension!');
     }
 

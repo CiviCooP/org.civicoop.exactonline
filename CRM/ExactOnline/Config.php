@@ -26,7 +26,6 @@ class CRM_ExactOnline_Config {
   /**
    * Add Exact Online Dashboard to the Contributions menu. Called from hook_navigationMenu.
    * @see http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_navigationMenu
-   *
    * @param mixed $params Parameters
    */
   public function addMenuItems(&$params) {
@@ -67,6 +66,22 @@ class CRM_ExactOnline_Config {
    */
   public static function set($name, $value) {
     CRM_Core_BAO_Setting::setItem($value, static::EXTENSION_NAME, $name);
+  }
+
+  /**
+   * Get OAuth variables from session.
+   */
+  public static function getSession($name) {
+    return CRM_Core_Session::singleton()->get($name);
+  }
+
+  /**
+   * Save OAuth variables to session (replace with more permanent storage later!).
+   * @param string $name Name
+   * @param mixed $value Value
+   */
+  public static function setSession($name, $value) {
+    CRM_Core_Session::singleton()->set($name, $value);
   }
 
 }
